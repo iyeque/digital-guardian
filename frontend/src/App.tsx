@@ -2,18 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
-import { store } from './store';
+import store from './store';
 import PrivateRoute from './components/PrivateRoute';
 import Layout from './components/Layout';
-import {
-  Home,
-  Login,
-  Register,
-  Dashboard,
-  Activities,
-  Progress,
-  ParentalControl
-} from './pages';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
+import Activities from './pages/Activities';
+import Progress from './pages/Progress';
+import ParentalControl from './pages/ParentalControl';
 
 const theme = {
   colors: {
